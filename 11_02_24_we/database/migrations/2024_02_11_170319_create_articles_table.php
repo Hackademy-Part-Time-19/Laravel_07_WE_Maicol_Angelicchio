@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('title', 150);
             $table->string('category', 40);
             $table->string('description', 250);
+            $table->text('body');
         });
     }
 
