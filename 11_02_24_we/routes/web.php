@@ -13,4 +13,8 @@ use App\Http\Controllers\ArticleController;
 |
 */
 
-Route::get('/', [ArticleController::class, 'SaveDB']);
+//Route::get('/', [ArticleController::class, 'SaveDB']);
+
+Route::get('/', function(){
+    return view('form');
+})->name('form');
