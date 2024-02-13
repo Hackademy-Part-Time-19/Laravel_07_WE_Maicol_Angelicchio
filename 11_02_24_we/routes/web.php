@@ -13,8 +13,5 @@ use App\Http\Controllers\ArticleController;
 |
 */
 
-//Route::get('/', [ArticleController::class, 'SaveDB']);
-
-Route::get('/', function(){
-    return view('form');
-})->name('form');
+Route::get('/', [ArticleController::class, 'create'])->name('form');
+Route::post('/', [ArticleController::class, 'store'])->name('form');

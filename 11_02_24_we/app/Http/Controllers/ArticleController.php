@@ -7,7 +7,12 @@ use App\Models\Article;
 
 class ArticleController extends Controller
 {
-    public function SaveDB(){
-        Article::create(['title'=>'titolo', 'category'=>'categoria', 'description'=>'descrizione', 'body'=>'corpo']);
+    public function store(Request $request){
+
+        Article::create($request->all());
+        return view('form');
+    }
+    public function create(){
+        return view('form');
     }
 }
