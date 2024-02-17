@@ -10,8 +10,9 @@ use App\Http\Requests\StoreArticleRequest;
 class ArticleController extends Controller
 {
     public function store(StoreArticleRequest $request){
-        Article::create($request->all());
-        return redirect()->back()->with(['Succes'=>'Articolo inserito']);
+        $validated=$request->validated();
+        Article::create($validated);
+        return redirect()->back()->with(['success'=>'Articolo inserito']);
     }
     public function create(){
         return view('form');
