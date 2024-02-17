@@ -30,14 +30,14 @@ class StoreArticleRequest extends FormRequest
     }
     public function messages(){
         return[
-            'title.required'=>'il titolo deve sesitere',
-            'title.max'=>'il titolo deve avere massimo 50 caratteri',
-            'category.required'=>'la categoria deve esitere',
-            'category.max'=>'la categoria deve avere massimo 20 caratteri',
-            'description.required'=>'la descrizione deve esistere',
-            'description.max'=>'la descrizione deve avere massimo 150 caratteri',
-            'body.required'=>'il corpo deve esistere',
-            'body.max'=>'il corpo deve avere massimo 5000 caratteri'
+            'title.required'=>'Il titolo deve esitere',
+            'title.max'=>'Il titolo deve avere massimo 50 caratteri',
+            'category.required'=>'La categoria deve esitere',
+            'category.max'=>'La categoria deve avere massimo 20 caratteri',
+            'description.required'=>'La descrizione deve esistere',
+            'description.max'=>'La descrizione deve avere massimo 150 caratteri',
+            'body.required'=>'Il corpo deve esistere',
+            'body.max'=>'Il corpo deve avere massimo 5000 caratteri'
         ];
     }
 }
